@@ -235,6 +235,8 @@ $(call add_json_bool, InstallExtraFlattenedApexes, $(PRODUCT_INSTALL_EXTRA_FLATT
 
 $(call add_json_bool, CompressedApex, $(PRODUCT_COMPRESSED_APEX))
 
+include vendor/derp/build/soong/soong_config.mk
+
 $(call add_json_bool, BoardUsesRecoveryAsBoot, $(BOARD_USES_RECOVERY_AS_BOOT))
 
 $(call add_json_list, BoardKernelBinaries, $(BOARD_KERNEL_BINARIES))
